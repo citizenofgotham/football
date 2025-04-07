@@ -1,0 +1,155 @@
+body {
+    background-color: #7E685A; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-header {
+    background-color:#E7717D; 
+    color: #fff;
+    padding: 20px 20px;
+    border-bottom: 4px solid#AFD275;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.blog-header h1 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 40px;
+    font-weight: 600; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    color:#3a0343; 
+}
+
+.blog-header .logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.blog-header p {
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #C2CAD0; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #C2B9B0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3a0343;
+}
+
+header img {
+    width: 50px;
+    margin: 0 10px;
+    height: 50px;
+}
+
+.club-cell {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 10px; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th {
+    background: #C2B9B0;
+    padding: 15px;
+    font-weight: bold;
+    color: #5a5a5a;
+}
+
+
+thead th:first-child,
+tbody td:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+thead th:not(:first-child),
+tbody td:not(:first-child) {
+    text-align: center;
+}
+
+
+tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr {
+    transition: all 0.3s ease-in-out;
+}
+
+tbody tr:hover {
+    background-color: #fff; 
+    box-shadow: 0 0 15px #00FF7F, 0 0 25px #00FF7F; 
+    border-radius: 10px;
+    border: 2px solid #00FF7F; 
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+
+
+
+td img {
+    width: 40px;  
+    height: 40px; 
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+strong {
+    color: #3a0343;
+    font-weight: bold;
+}
+
+.form {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.win {
+    background-color: #28a745;
+}
+
+.draw {
+    background-color: #6c757d;
+}
+
+.loss {
+    background-color: #dc3545;
+}
