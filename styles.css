@@ -1,15 +1,15 @@
 body {
-    background-color: #F3F4F6; /* light gray background */
+    background-color: #F3F4F6;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .blog-header {
-    background-color: #1F2937; /* dark slate */
+    background-color: #1F2937;
     color: #FFFFFF;
     padding: 30px 40px;
-    border-bottom: 5px solid #10B981; /* teal-green accent */
+    border-bottom: 5px solid #10B981;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -60,6 +60,7 @@ header img {
 .club-cell {
     display: flex;
     align-items: center;
+    text-align: left;
     gap: 10px;
 }
 
@@ -67,23 +68,32 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    table-layout: fixed;
 }
 
 thead th {
-    background-color: #F9FAFB;
-    padding: 18px 10px;
-    font-weight: 600;
+    background: #F9FAFB;
+    padding: 15px;
+    font-weight: bold;
     color: #4B5563;
     border-bottom: 2px solid #E5E7EB;
-    text-transform: uppercase;
-    font-size: 14px;
+}
+
+thead th:first-child,
+tbody td:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+thead th:not(:first-child),
+tbody td:not(:first-child) {
+    text-align: center;
 }
 
 tbody td {
-    padding: 18px 10px;
+    padding: 15px;
     border-bottom: 1px solid #E5E7EB;
-    font-size: 16px;
-    color: #1F2937;
+    vertical-align: middle;
 }
 
 tbody tr {
@@ -91,22 +101,23 @@ tbody tr {
 }
 
 tbody tr:hover {
-    background-color: #ECFDF5; /* soft green hint */
-    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
-    border-radius: 10px;
+    background-color: #F0FDFA;
     transform: scale(1.01);
     cursor: pointer;
+    border-radius: 10px;
 }
 
 td img {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
-    margin-right: 8px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 strong {
-    color: #111827;
+    color: #1F2937;
+    font-weight: 700;
 }
 
 .form {
@@ -117,14 +128,19 @@ strong {
     text-align: center;
     border-radius: 50%;
     font-weight: 600;
-    color: #fff;
-    font-size: 14px;
+    color: #FFFFFF;
     margin-right: 4px;
+    font-size: 14px;
 }
 
 .win {
-    background-color: #10B981; /* green */
+    background-color: #22C55E;
 }
 
 .draw {
-    background-color: #6B728
+    background-color: #9CA3AF;
+}
+
+.loss {
+    background-color: #EF4444;
+}
